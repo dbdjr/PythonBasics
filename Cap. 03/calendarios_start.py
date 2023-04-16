@@ -12,16 +12,15 @@ def CalendarioTexto():
 
 #CalendarioTexto()
 # Criando um calendário no formato HTML
-
-def CalendarioHTML():
+i=1
+def CalendarioHTML(mes):
     calendarioHTML = calendar.HTMLCalendar(calendar.SUNDAY)
-    htmlCalendario = calendarioHTML.formatmonth(2019, 6)
+    htmlCalendario = calendarioHTML.formatmonth(2019, mes)
     print (htmlCalendario)
-
-CalendarioHTML()
-
-
 # loop ao longo dos dias de um mês
+while(i<=12):
+    CalendarioHTML(i)
+    i+=1
 
 
 
